@@ -11,3 +11,22 @@ fun main(){
 }
   
 ```
+## or do like this
+``` kotlin
+fun main(){
+  
+  fun doSthWithResult(cr:CommandResult,dosth:()->Unit){
+    if (rr.isSuccesss){
+      dosth()
+    }
+    ……
+  }
+  
+  doSthWithResult(adb reboot bootloader){
+    doSthWithResult(fastboot flash pair("boot_a","path/to/boot")){
+      println("yeeeeeeaaah") 
+     }
+  }
+}
+
+```
